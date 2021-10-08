@@ -1,0 +1,70 @@
+{
+  "name": "@mike-works/web-security-fundamentals",
+  "version": "0.0.0-development",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon -e js --watch server index.js",
+    "test": "echo 'no tests'",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "dependencies": {
+    "bcrypt": "5.0.1",
+    "body-parser": "1.19.0",
+    "chalk": "4.1.2",
+    "commander": "8.2.0",
+    "connect-flash": "0.1.1",
+    "connect-sqlite3": "^0.9.11",
+    "cookie-parser": "1.4.5",
+    "cookie-session": "2.0.0-rc.1",
+    "cors": "2.8.5",
+    "csurf": "1.11.0",
+    "debug": "4.3.2",
+    "dist-exiftool": "10.53.0",
+    "ejs": "3.1.6",
+    "ejs-mate": "3.0.0",
+    "express": "4.17.1",
+    "express-session": "1.17.2",
+    "faker": "5.5.3",
+    "helmet": "4.6.0",
+    "helmet-csp": "3.4.0",
+    "lodash": "4.17.21",
+    "morgan": "1.10.0",
+    "node-exiftool": "2.3.0",
+    "nodemon": "2.0.13",
+    "sequelize": "6.6.5",
+    "serve-favicon": "2.5.0",
+    "sqlite3": "^4.2.0"
+  },
+  "description": "Mike Works Web Security course",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-works/web-security-fundamentals.git"
+  },
+  "keywords": [
+    "web-security",
+    "infosec",
+    "xss",
+    "cors",
+    "pentest",
+    "clickjack",
+    "workshop",
+    "javascript"
+  ],
+  "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mike-works/web-security-fundamentals/issues"
+  },
+  "homepage": "https://github.com/mike-works/web-security-fundamentals#readme",
+  "devDependencies": {
+    "@types/lodash": "4.14.173",
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.1.0",
+    "babel-preset-stage-3": "6.24.1",
+    "travis-deploy-once": "^3.3.0"
+  },
+  "release": {
+    "extends": "@mike-works/workshop-semantic-release-config"
+  }
+}
